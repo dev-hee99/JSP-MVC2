@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="euc-kr" ?>
+<!-- /WEB-INF/decorators.xml -->
+<decorators defaultdir="/Experlayout">
+	<!-- sitemesh의 layout 설정 -->
+	
+	<decorator name="Exper1" page="memberlayout.jsp">
+		<pattern>/Expermember/my*</pattern>
+		<pattern>/Expermember/member*</pattern>
+		<pattern>/Experboard/free*</pattern>
+		<pattern>/Experboard/ifm*</pattern>
+		<pattern>/Experboard/*</pattern>
+		<pattern>/Expermember/body*</pattern>
+		<pattern>/Expermember/weightre*</pattern>
+		<pattern>/Expermember/exer*</pattern>
+		
+	</decorator>
+	
+	<decorator name="Exper2" page="mainlayout.jsp">
+		<pattern>/Expermember/Exp*</pattern>
+		<pattern>/Expermember/main*</pattern>
+		<pattern>/Expermember/vid*</pattern>
+		<pattern>/Expermember/tip*</pattern>
+	</decorator>
+	
+	<decorator name="Experboard" page="boardlayout.jsp">
+		
+	</decorator>
+    
+	<!-- sitemesh의 layout설정 안함 -->
+	<excludes>
+	<pattern>/Experboard/imgupload*</pattern>
+	<pattern></pattern>
+	</excludes>
+</decorators>
